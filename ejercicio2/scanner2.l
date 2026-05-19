@@ -35,7 +35,7 @@ identificador {letra}({letra}|{digito})*
    Acción esperada: printf("identificador de longitud %d: %s\n", yyleng, yytext);        */
  {identificador} {printf("identificador de longitud %d: %s\n", yyleng, yytext); }
 [ \t\n] { }
-. { printf("caracter no reconocido: %s\n", yytext); }
+ . { printf("caracter no reconocido: %s\n", yytext); }
 
 %%
 
